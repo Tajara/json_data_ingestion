@@ -1,0 +1,15 @@
+{
+  "event_id": regex(/^[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}\Z/),
+  "timestamp": regex(/^((19|20)[0-9][0-9])[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])[T]([01][1-9]|[2][0-3])[:]([0-5][0-9])[:]([0-5][0-9])([+|-]([01][0-9]|[2][0-3])[:]([0-5][0-9])){0,1}$/),
+  "data": {
+   		"id": random(632725, 982424),
+    	"old_status": choice('SUSPENDED','ACTIVE'),
+    	"new_status": choice('SUSPENDED','ACTIVE'),
+   	 	"reason": regex(/^[a-z0-9_-]{3,15}$/)
+  }
+ }
+
+
+
+
+https://extendsclass.com/json-generator.html
